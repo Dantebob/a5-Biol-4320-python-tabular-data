@@ -34,6 +34,8 @@ def make_plot(dataframe, file_name):
     plt.legend()
     file_name = str(file_name).replace(" ", "_") + "_regress.png"
     plt.savefig(file_name)
+    #plt.clf is to clear fig after saving it so it is not added to the next plot.
+    plt.clf()
     return
 
 if __name__ == '__main__':
