@@ -8,7 +8,7 @@ from scipy import stats
 def make_plot(dataframe, file_name):
     """
     Takes in dataframe and file_name as arguements then creates a plot with a regression line in the form of <file_name>_regress.png
-    
+
     Parameters
     -------------------
     dataframe : a class object of pandas and a 2D array
@@ -41,7 +41,7 @@ def make_plot(dataframe, file_name):
 if __name__ == '__main__':
     dataframe = pd.read_csv("iris.csv")
 
-    long_flowers = dataframe[dataframe.petal_length_cm > 5.9]
+    #long_flowers = dataframe[dataframe.petal_length_cm > 5.9]
     setosa = dataframe[dataframe.species == "Iris_setosa"]
     virginica = dataframe[dataframe.species == "Iris_virginica"]
     versicolor = dataframe[dataframe.species == "Iris_versicolor"]
